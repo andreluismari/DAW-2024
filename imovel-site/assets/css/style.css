@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
@@ -17,7 +22,7 @@ header .container {
     flex-direction: row;
     /*alinha horizontalmente com espaço eles */
     justify-content: space-between;
-    /*Alinha ao centro verticalmente*/
+    /Alinha ao centro verticalmente/
     align-items: center;
 }
 
@@ -101,4 +106,286 @@ main {}
 
 #banner h3 {
     margin: 0;
+}
+
+#banner .banner-body1 {
+    padding: 3.75rem 0 0 2.8rem;
+    font-size: 4rem;
+    font-weight: 300;
+
+}
+
+#banner .banner-body2 {
+    margin-top: 1rem;
+    margin-left: 2.8rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+section h2 {
+    /* T/B L/R*/
+    padding: 2rem 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #01528a;
+    margin: 2rem 0;
+}
+
+#cards {}
+
+#cards .cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cards .card {
+    width: 530px;
+    display: flex;
+    gap: 1rem;
+    box-shadow: rgb(0 0 0 / 20%) 0 2px 1px -1px, rgb(0 0 0 / 14%) 0 1px 1px 0, rgb(0 0 0 / 12%) 0 1px 3px 0;
+    border-radius: 0.6rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    position: relative;
+}
+
+#cards .card img {
+    width: 160px;
+    height: 180px;
+}
+
+#cards .card h4 {
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+#cards .card p {
+    font-weight: 300;
+    text-align: justify;
+    color: #8f90a6;
+    max-height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: 1.3rem;
+}
+
+#cards .card-price {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#cards .card-price p {
+    background-color: #0889d4;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+#reasons {}
+
+#reasons .reasons-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reasons .reason {
+    border-left: 2px solid #0889d4;
+    width: 100%;
+
+}
+
+#reasons .reason:first-of-type {
+    border-left: none;
+}
+
+#reasons .reason p {
+    text-align: center;
+}
+
+#reasons .reason-value {
+    font-size: 2rem;
+}
+
+#reasons .reason-label {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #8f90a6;
+}
+
+#specialists {}
+
+#specialists .specialists-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#specialists .specialist {
+    width: 100%;
+    border: 1.5px solid #dcdceb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    color: #01528a
+}
+
+#specialists h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+#specialists p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+#specialists .specialist-detail {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+#values {}
+
+#values .values-content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#values .values-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 1rem;
+}
+
+#values .values-text p {
+    font-size: 1.1rem;
+    text-align: justify;
+    font-weight: 300;
+}
+
+#values .values-text .values-detail {
+    padding: 1.5rem;
+}
+
+#values .values-detail .value {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#values .value p {
+    background-image: url('../img/bullet-values.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 1.5rem;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #0889d4;
+    color: #ffffff;
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-company {
+    width: 450px;
+}
+
+footer .footer-company p{
+    font-size: 1.0rem;
+    font-weight: 300;
+
+}
+
+footer  .footer-brand {
+    background-image: url('../img/logo_imobiliaria_branca.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 2rem;
+    padding-left: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+
+}
+
+footer.footer-menu{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer .footer-menu-title {
+    font-weight: 400;
+
+}
+
+footer .footer-menu ul{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+footer .footer-menu a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+footer .footer-menu a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-social span{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+}
+
+footer .footer-social .facebook {
+    background-image: url('../img/icon-facebook.svg');
+    
+}
+
+footer .footer-social .twitter {
+    background-image: url('../img/icon-twitter.svg');
+
+}
+
+footer .footer-social .instagram {
+    background-image: url('../img/icon-instagram.svg');
+
+}
+
+footer .footer-social .linkedin {
+    background-image: url('../img/icon-linkedin.svg');
+
+}
+footer .footer-copyright p{
+    font-weight: 300;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    gap: 1rem;
+    
+
 }
